@@ -1,0 +1,140 @@
+.codename-card {
+  width: 208.32px;
+  height: 134.4px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 0.6rem;
+  touch-action: manipulation;
+}
+
+.shadow-card,
+.shadow-inset {
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+}
+
+.cardImage {
+  top: 0px;
+  left: 0px;
+  width: 208.32px;
+  height: 134.4px;
+  background-image: url(https://cdn.codenames.game/v2/img/card/fronts.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.card.peek.flipped-card {
+  transform: rotateX(55deg) translateZ(42px);
+}
+
+.blue {
+  background-position-y: 25%;
+}
+
+.black {
+  background-position-y: 0%;
+}
+
+.red {
+  background-position-y: 100%;
+}
+
+.white {
+  background-position-y: 50%;
+}
+
+.center-text.black {
+  color: white;
+}
+
+.flipped-card {
+  margin-top: -62%;
+}
+
+.center-text {
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 25px;
+  height: 42px;
+  justify-content: center;
+  margin-top: -25%;
+  line-height: 24px;
+  font-weight: bold;
+  tab-size: 4;
+  text-transform: uppercase;
+  user-select: text;
+  width: 200.906px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+
+.card-character.blue {
+  background-image: url(https://cdn.codenames.game/v2/img/card/blue.png);
+  left: 50%;
+  bottom: 0px;
+  height: 120px;
+  width: 134px;
+  transform: translateX(-50%);
+  background-size: 100%;
+  background-position-y: 0%;
+  position:absolute;
+}
+
+.card-character.red {
+  background-image: url(https://cdn.codenames.game/v2/img/card/red.png);
+  left: 50%;
+  bottom: 0px;
+  position:absolute;
+  height: 120px;
+  width: 134px;
+  transform: translateX(-50%);
+  background-size: 100%;
+  background-position-y: 0%;
+}
+
+.card-character.white {
+  background-image: url(https://cdn.codenames.game/v2/img/card/gray.png);
+  left: 50%;
+  bottom: 0px;
+  position:absolute;
+  height: 120px;
+  width: 134px;
+  transform: translateX(-50%);
+  background-size: 100%;
+  background-position-y: 0%;
+}
+
+.card-background {
+  top: 0px;
+  left: 0px;
+  width: 208.32px;
+  height: 134.4px;
+  background-image: url(https://cdn.codenames.game/v2/img/card/backs.png);
+  background-size: 100%;
+  background-position-y: 33.3333%;
+  background-repeat: no-repeat;
+}
+
+.card-background.red {
+  background-position-y: 100%;
+}
+.card-background.blue {
+  background-position-y: 0%;
+}
+
+.card-background.black {    
+  color: white;
+  background-image: url(https://cdn.codenames.game/v2/img/card/black-back.png);
+}
+
+.card-background.white {
+  background-position-y: 33%;
+}
+
+.card.cover {
+  transform: rotateX(0deg);
+}

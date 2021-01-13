@@ -1,5 +1,25 @@
 .App {
   text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: transform 200ms ease 0s;
+  user-select: none; 
+  overflow-y: auto;
+}
+
+.blue-app-background {
+  background: radial-gradient(circle at 50% 50%, rgb(91, 174, 215) 0%, rgb(5, 60, 84) 100%);
+}
+
+.background {
+  background-image: url(https://cdn.codenames.game/v2/img/bg-raster.svg);
+  mix-blend-mode: overlay;
+}
+
+.red-app-background {
+  background: radial-gradient(circle at 50% 50%, rgb(231, 102, 60) 0%, rgb(72, 12, 2) 100%);
 }
 
 .flex {
@@ -8,13 +28,16 @@
   max-height: 100%;
 }
 
+.board {
+  width: 1200px;
+}
 
 .fill {
-  flex: 1 1
+  flex: 1 1;
 }
 
 .fit {
-  flex: 0 1
+  flex: 0 1;
 }
 
 .center {
@@ -23,4 +46,94 @@
   align-content: center;
   text-align: center;
   vertical-align: center;
+}
+
+.left {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  text-align: start;
+  vertical-align: center;
+}
+
+.red-background {
+  background-color: lightcoral;
+  border-radius: 5px;
+}
+
+.red-title {
+  color: #8a1000;
+}
+
+.blue-background {
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+.blue-title {
+  color: navy;
+}
+
+.panel-container {
+  width: 330px;
+}
+
+.cards-left {
+  font-weight: bold;
+  font-size: 50px;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 0.8rem;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+}
+
+.clue, .actionMessage {
+  background-color: floralwhite;
+  width: fit-content;
+  margin: auto;
+  border-radius: 8px;
+  padding: 5px;
+  min-width: 50%;
+}
+
+#gamelog {
+  background-color: rgba(245, 245, 220, 0.8);
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 20px;
+  overflow-y: scroll;
+  max-height: 400px;
+}
+
+#gamelog .row:nth-of-type(odd){
+  background-color:  rgb(245, 245, 220, 0.9)
+}
+
+#gamelog .player {
+  margin-right: 4%;
+}
+#gamelog .actionType {
+  margin-left: 4%;
+}
+
+.clue-input {
+  font-size: 1.75rem;
+  padding: 0.25rem 0.5rem 0.15rem;
+  border: none;
+  text-transform: uppercase;
+  min-width: 0px;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+.number-menu {
+  border-radius: 4px;
+  
+}
+.number-menu > div {
+  background: white;
 }
