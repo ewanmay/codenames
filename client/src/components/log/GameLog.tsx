@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {LoggedAction} from '../../context/types'
 // import { AppContext } from './context/context';
 
